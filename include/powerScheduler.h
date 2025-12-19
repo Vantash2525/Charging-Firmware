@@ -3,6 +3,7 @@
 
 #include<vector>
 #include<iomanip>
+#include<cmath>
 
 namespace firmware{
 
@@ -44,7 +45,7 @@ public:
             totalTime += duration;
             currentBattery -= requiredBattery;
         }
-        return totalTime;
+        return round(totalTime*10.0)/10.0;
     }
 };
 }
