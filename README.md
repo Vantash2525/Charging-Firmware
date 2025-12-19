@@ -13,6 +13,28 @@ This project is implemented as a **Header-Only Library** to demonstrate modulari
   - Prevents division-by-zero errors by validating the `chargeRate`.
 - **Optimization:** Implements a **Greedy Algorithm** to minimize idle time by charging exactly the amount needed for the immediate next task.
 
+## 🛠 Setup and Execution
+
+### Prerequisites
+- A C++11 (or later) compatible compiler (e.g., GCC, Clang, or MSVC).
+
+### Build Instructions
+Open your terminal in the project root directory and run:
+```bash
+g++ -Iinclude src/main.cpp -o firmware_tool
+```
+
+### Execution Instructions
+On Linux or macOS
+```bash
+./firmware_tool
+```
+On Windows
+```bash
+firmware_tool.exe
+```
+
+firmware_tool.exe
 ## 📂 Project Structure
 ```text
 ├── include/
