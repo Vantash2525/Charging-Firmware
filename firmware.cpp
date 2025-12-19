@@ -17,6 +17,10 @@ double minimumRunTime(double batteryCapacity, double initialBattery, double char
         }
 
         if(currentBattery < requiredBattery){
+            if(chargeRate <= 0){
+                //std::cout<<"Task "<<i+1<<" cannot be done the chargerate is 0 or negetive "<<std::endl;
+                return -1;
+            }
             double neededEnergy = requiredBattery - currentBattery ;
             double chargeTime = neededEnergy /chargeRate;
             totalTime += chargeTime;
