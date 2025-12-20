@@ -1,5 +1,5 @@
 #include<iostream>
-#include "powerScheduler.h"
+#include "../include/powerScheduler.h"
 using namespace firmware;
 
 int main(){
